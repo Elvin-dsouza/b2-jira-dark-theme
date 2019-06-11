@@ -1,6 +1,6 @@
 /* B2 JIRA Dark Theme by Blake Buthod, United States
 /* Based on R3gi's JIRA Dark - https://userstyles.org/styles/159353/r3gi-s-jira-dark
-/* Version: 2019.06.11.03
+/* Version: 2019.06.11.04
 */
 .ghx-type-1 > div.ghx-grabber
 {
@@ -1680,7 +1680,7 @@ th.confluenceTh
 {
     display: block;
     margin-top: 3px;
-    color: white;
+    color: #BDBDBD;
 }
 #navigator-sidebar
 {
@@ -1822,7 +1822,9 @@ button:hover,
 .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:active,
 .aui-button.aui-button-link:hover,
 .aui-button.aui-button-text:hover,
-.aui-header.aui-dropdown2-trigger-group .aui-icon
+.aui-header.aui-dropdown2-trigger-group .aui-icon,
+.issue-list > li.focused div,
+.issue-list > li.focused .splitview-issue-link .issue-link-summary
 {
     color: white !important;
 }
@@ -1838,4 +1840,16 @@ ol.issue-list > li:hover span
 .aui-button.aui-button-text:hover
 {
     background-color: transparent !important;
+}
+.ghx-controls-filters dd a:hover
+{
+    border-color: black;
+    background: black;
+    color: #BDBDBD;
+}
+form.aui legend, form.aui label,
+.item-details dl>dt,
+.property-list .item .name
+{
+    color: #7b9fb0;
 }
