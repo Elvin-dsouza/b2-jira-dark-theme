@@ -1,6 +1,6 @@
 /* B2 JIRA Dark Theme by Blake Buthod, United States
 /* Based on R3gi's JIRA Dark - https://userstyles.org/styles/159353/r3gi-s-jira-dark
-/* Version: 2019.06.11
+/* Version: 2019.06.11.02
 */
 .ghx-type-1 > div.ghx-grabber
 {
@@ -1139,11 +1139,6 @@ aui-inline-dialog .contents,
 {
     padding-top: 10px;
 }
-.aui-list h5,
-.iic-trigger button:hover
-{
-    color: white;
-}
 #ghx-plan
 {
     display: inline-block;
@@ -1704,15 +1699,6 @@ th.confluenceTh
     /* background-color: red; */
     border-top: 2px solid #616061;
 }
-.aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a,
-.aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:link,
-.aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:visited,
-.aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:focus,
-.aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:hover,
-.aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:active
-{
-    color: white;
-}
 .aui-button .aui-icon,
 .fav-link
 {
@@ -1722,10 +1708,6 @@ th.confluenceTh
 .toggle-wrap .aui-button.toggle-title
 {
     background: #909090;
-}
-.aui-sidebar .aui-page-header-main .aui-item.project-title a
-{
-    color: white;
 }
 .aui-lozenge.aui-lozenge-subtle.jira-issue-status-lozenge-blue-gray
 {
@@ -1740,14 +1722,6 @@ th.confluenceTh
     background-color: rgba(22, 149, 210, 0.63);
     border-color: rgba(22, 149, 210, 0.63);
 }
-.aui-button.aui-button-link
-{
-    color: white;
-}
-button:hover
-{
-    color: white !important;
-}
 .active-tab a
 {
     background-color: #606060 !important;
@@ -1759,11 +1733,6 @@ button:hover
 .aui-button:hover .aui-icon
 {
     color: black;
-}
-.toolbar-trigger:hover,
-.aui-dropdown2-trigger:hover
-{
-    color: white;
 }
 .aui-dropdown2-section
 {
@@ -1779,10 +1748,6 @@ button:hover
 {
     background-color: #404040;
     color: white;
-}
-.aui-dropdown2.aui-style-default a:hover
-{
-    color: white !important;
 }
 .aui-iconfont-success
 {
@@ -1832,17 +1797,29 @@ primary[disabled],
     color: white !important;
     margin-right: 10px
 }
-#issue-workflow-transition-cancel
-{
-    color: white;
-}
 ol.issue-list > li:hover
 {
     background: #616061;
 }
-ol.issue-list > li.focused:hover span
+ol.issue-list > li.focused:hover span,
+#create_link,
+#issue-workflow-transition-cancel,
+.aui-dropdown2.aui-style-default a:hover,
+button:hover,
+.toolbar-trigger:hover,
+.aui-dropdown2-trigger:hover,
+.aui-list h5,
+.iic-trigger button:hover,
+.aui-sidebar .aui-page-header-main .aui-item.project-title a,
+.aui-button.aui-button-link,
+.aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a,
+.aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:link,
+.aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:visited,
+.aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:focus,
+.aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:hover,
+.aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:active
 {
-    color: white;
+    color: white !important;
 }
 ol.issue-list > li:hover span
 {
