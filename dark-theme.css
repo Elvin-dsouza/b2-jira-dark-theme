@@ -1,6 +1,6 @@
 /* B2 JIRA Dark Theme by Blake Buthod, United States
 /* Based on R3gi's JIRA Dark - https://userstyles.org/styles/159353/r3gi-s-jira-dark
-/* Version: 2019.06.11.02
+/* Version: 2019.06.11.03
 */
 .ghx-type-1 > div.ghx-grabber
 {
@@ -1696,7 +1696,6 @@ th.confluenceTh
 }
 .simple-issue-list .inline-issue-create-container
 {
-    /* background-color: red; */
     border-top: 2px solid #616061;
 }
 .aui-button .aui-icon,
@@ -1730,10 +1729,6 @@ th.confluenceTh
 {
     background: #1495D3;
 }
-.aui-button:hover .aui-icon
-{
-    color: black;
-}
 .aui-dropdown2-section
 {
     background-color: #404040;
@@ -1749,9 +1744,15 @@ th.confluenceTh
     background-color: #404040;
     color: white;
 }
-.aui-iconfont-success
+.aui-iconfont-success,
+form.aui.security-level-drop-icon,
+.help-lnk .aui-icon.aui-iconfont-help,
+.icon-default,
+.aui-button:hover .aui-icon,
+form.aui .security-level-drop-icon,
+.aui-icon
 {
-    color: black !important;
+    color: #484848 !important;
 }
 .search-button:hover
 {
@@ -1791,7 +1792,8 @@ primary[disabled],
 .aui-button.aui-button-primary[aria-disabled="true"],
 .aui-button.aui-button-primary[aria-disabled="true"],
 .aui-button.aui-button-primary[aria-disabled="true"],
-.aui-button.aui-button-primary[aria-disabled="true"]
+.aui-button.aui-button-primary[aria-disabled="true"],
+input.aui-button
 {
     background-color: #1495D3 !important;
     color: white !important;
@@ -1817,7 +1819,10 @@ button:hover,
 .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:visited,
 .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:focus,
 .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:hover,
-.aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:active
+.aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:active,
+.aui-button.aui-button-link:hover,
+.aui-button.aui-button-text:hover,
+.aui-header.aui-dropdown2-trigger-group .aui-icon
 {
     color: white !important;
 }
@@ -1833,6 +1838,4 @@ ol.issue-list > li:hover span
 .aui-button.aui-button-text:hover
 {
     background-color: transparent !important;
-    color: #BDBDBD;
-    text-decoration: underline;
 }
