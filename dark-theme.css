@@ -1,6 +1,6 @@
 /* B2 JIRA Dark Theme by Blake Buthod, United States
 /* Based on R3gi's JIRA Dark - https://userstyles.org/styles/159353/r3gi-s-jira-dark
-/* Version: 2019.06.11.04
+/* Version: 2019.07.22.01
 */
 .ghx-type-1 > div.ghx-grabber
 {
@@ -878,12 +878,24 @@ a,
 {
     color: #BDBDBD;
 }
-
+.action-body.flooded a
+{
+    color: #1495D3;
+}
+.action-body.flooded a:hover,
+.user-content-block a:hover
+{
+    text-decoration: underline;
+}
+.user-content-block a
+{
+    color: #D2D2D2;
+}
 a:hover,
 a:focus,
 a:active
 {
-    color: #FFFFFF;
+    color: white;
     text-decoration: none;
 }
 
@@ -1671,7 +1683,7 @@ span.jppng-stats span.aui-badge,
 th.confluenceTh
 {
     border: 1px solid #606061;
-    background: #2F557B;
+    background: #444;
     padding: 3px 4px 3px 4px;
     text-align: center;
     color: #BDBCBD;
@@ -1710,11 +1722,11 @@ th.confluenceTh
 }
 .aui-lozenge.aui-lozenge-subtle.jira-issue-status-lozenge-blue-gray
 {
-    border-color: #1695D2;
+    border-color: #1495D3;
 }
 .aui-lozenge.aui-lozenge-subtle.jira-issue-status-lozenge-blue-gray
 {
-    color: #1695D2;
+    color: #1495D3;
 }
 .aui-lozenge.jira-issue-status-lozenge-blue-gray
 {
@@ -1824,7 +1836,8 @@ button:hover,
 .aui-button.aui-button-text:hover,
 .aui-header.aui-dropdown2-trigger-group .aui-icon,
 .issue-list > li.focused div,
-.issue-list > li.focused .splitview-issue-link .issue-link-summary
+.issue-list > li.focused .splitview-issue-link .issue-link-summary,
+td a
 {
     color: white !important;
 }
@@ -1847,9 +1860,27 @@ ol.issue-list > li:hover span
     background: black;
     color: #BDBDBD;
 }
-form.aui legend, form.aui label,
-.item-details dl>dt,
+form.aui legend,
+form.aui label,
+.item-details dl > dt,
 .property-list .item .name
 {
     color: #7b9fb0;
+}
+h4.filter-title > a:hover
+{
+    background: black !important;
+    color: white;
+}
+.shorten .shortener-expand:hover,
+.shorten .shortener-collapse:hover,
+.shorten .shortener-expand:focus,
+.shorten .shortener-collapse:focus
+{
+    background-color: black;
+}
+td.totals,
+.two-d-container table.aui tbody .totals
+{
+    background-color: #555 !important;
 }
