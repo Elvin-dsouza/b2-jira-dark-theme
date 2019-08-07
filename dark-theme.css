@@ -1,6 +1,6 @@
 /* B2 JIRA Dark Theme by Blake Buthod, United States
 /* Based on R3gi's JIRA Dark - https://userstyles.org/styles/159353/r3gi-s-jira-dark
-/* Version: 2019.07.22.01
+/* Version: 2019.08.07.01
 */
 .ghx-type-1 > div.ghx-grabber
 {
@@ -56,6 +56,7 @@ html body.no-title,
 .ghx-column-headers .ghx-column > h2,
 #project-config-header,
 .aui-navgroup-horizontal,
+.aui-page-header,
 #header .aui-message,
 table.aui > tbody > tr,
 #content .aui-sidebar + .aui-page-header,
@@ -140,7 +141,8 @@ textarea
 .tempo-report-module tr.level-2 td.nav.sum,
 .tempo-timesheet #issuetable thead tr.rowHeader th a,
 .tempo-timesheet #issuetable thead tr.rowHeader th,
-.ghx-parent-stub .ghx-summary
+.ghx-parent-stub .ghx-summary,
+.jira-dialog .buttons-container .hint-container
 {
     color: #999;
 }
@@ -682,7 +684,9 @@ input.js-editing-field,
 .tempo-table.tempo-timesheet #issuetable th.weekday.active,
 .tempo-table.tempo-timesheet #issuetable tr.header-row td.hours,
 .tempo-table.tempo-timesheet #issuetable tr.header-row td.day,
-.tempo-table a
+.tempo-table a,
+aui-badge,
+.aui-badge
 {
     color: #BDBDBD !important;
 }
@@ -898,7 +902,6 @@ a:active
     color: white;
     text-decoration: none;
 }
-
 .aui-button.ghx-dropdown-trigger:after,
 .aui-buttons .aui-button.aui-button-primary.ghx-dropdown-trigger:after
 {
@@ -1225,7 +1228,9 @@ form.aui .multi-select[disabled],
 form.aui .select[disabled] option,
 form.aui .select[disabled] optgroup,
 form.aui .multi-select[disabled] option,
-form.aui .multi-select[disabled] optgroup
+form.aui .multi-select[disabled] optgroup,
+#user_profile_tabs > .aui-nav-selected > a.aui-nav-item,
+.wiki-edit-content.previewClass
 {
     background-color: #606060;
 }
@@ -1577,7 +1582,6 @@ table.aui > tfoot > tr:first-child > td,
 {
     color: rgba(112, 112, 112, 0.5);
 }
-
 .pokerng-timer-icon
 {
     filter: invert(55%);
@@ -1845,10 +1849,6 @@ ol.issue-list > li:hover span
 {
     color: #BDBDBD;
 }
-.wiki-edit-content.previewClass
-{
-    background-color: #606060;
-}
 .aui-button.aui-button-link:hover,
 .aui-button.aui-button-text:hover
 {
@@ -1883,4 +1883,12 @@ td.totals,
 .two-d-container table.aui tbody .totals
 {
     background-color: #555 !important;
+}
+.dashboard-tabs.tabs.vertical
+{
+    background-color: #202020 !important;
+}
+.dashboard-tabs.tabs.vertical ul li.aui-nav-selected
+{
+    background-color: #444 !important;
 }
