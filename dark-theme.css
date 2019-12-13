@@ -1,6 +1,6 @@
 /* B2 JIRA Dark Theme by Blake Buthod, United States
 /* Based on R3gi's JIRA Dark - https://userstyles.org/styles/159353/r3gi-s-jira-dark
-/* Version: 2019.08.07.01
+/* Version: 2019.11.14.01
 */
 .ghx-type-1 > div.ghx-grabber
 {
@@ -15,6 +15,10 @@
 .ghx-type-3 > div.ghx-grabber
 {
     background-color: #2f557b;
+}
+html
+{
+    scrollbar-color: #7b7b7b black;
 }
 html,
 body,
@@ -56,7 +60,6 @@ html body.no-title,
 .ghx-column-headers .ghx-column > h2,
 #project-config-header,
 .aui-navgroup-horizontal,
-.aui-page-header,
 #header .aui-message,
 table.aui > tbody > tr,
 #content .aui-sidebar + .aui-page-header,
@@ -83,7 +86,10 @@ form.aui optgroup option,
 .aui-navgroup ~ .aui-page-panel .aui-page-panel-nav,
 .aui-sidebar ~ .aui-page-panel .aui-page-panel-nav,
 .aui-page-header ~ .aui-page-panel .aui-page-panel-nav,
-.header-print-container
+.header-print-container,
+.dialog-title,
+.content-body,
+.dialog-button-panel
 {
     background: #303030 !important;
     color: #999;
@@ -121,7 +127,8 @@ textarea
 .tempo-timesheet #issuetable td.tt-nonworking-days,
 .tempo-calendar #issuetable td.tt-nonworking-days,
 .tempo-calendar #issuetable td.tt-nonworking-days a,
-.ghx-parent-stub .ghx-group::before
+.ghx-parent-stub .ghx-group::before,
+.recipients li:hover
 {
     background-color: #404040;
 }
@@ -142,7 +149,9 @@ textarea
 .tempo-timesheet #issuetable thead tr.rowHeader th a,
 .tempo-timesheet #issuetable thead tr.rowHeader th,
 .ghx-parent-stub .ghx-summary,
-.jira-dialog .buttons-container .hint-container
+.jira-dialog .buttons-container .hint-container,
+body#tinymce table td,
+body#tinymce table th
 {
     color: #999;
 }
@@ -200,7 +209,8 @@ div.allocation-bar
 {
     background-color: #202020 !important;
 }
-.aui-restfultable-readonly.aui-restfultable-movable td
+.aui-restfultable-readonly.aui-restfultable-movable td,
+body#tinymce a.user-hover[contentEditable="false"][data-mce-selected]
 {
     background-color: #404040 !important;
 }
@@ -278,7 +288,8 @@ table.aui:not(.aui-table-list) > tbody > tr > th,
 table.aui:not(.aui-table-list) > tfoot > tr > th,
 table.aui:not(.aui-table-list) > tbody > tr > td,
 table.aui:not(.aui-table-list) > tfoot > tr > td,
-.header-print-container
+.header-print-container,
+.navigator-body
 {
     border-color: #606060 !important;
 }
@@ -408,7 +419,8 @@ div.mce-edit-area,
 .aui-dialog .dialog-page-menu li.page-menu-item button.item-button:hover,
 .aui-dialog .dialog-page-menu li.page-menu-item button.item-button:focus,
 .aui-dialog .dialog-page-menu li.page-menu-item.selected button.item-button:hover,
-.aui-dialog .dialog-page-menu li.page-menu-item.selected button.item-button:focus
+.aui-dialog .dialog-page-menu li.page-menu-item.selected button.item-button:focus,
+.aui-sidebar-body > .aui-page-header
 {
     background-color: #202020;
 }
@@ -864,7 +876,6 @@ h2.dialog-title,
 .aui-dropdown2.aui-style-default:hover a
 {
     background-color: #303030;
-    border-radius: 0;
     border-color: #707070;
     color: #999;
 }
@@ -953,11 +964,15 @@ a.aui-button,
 {
     background: #404040;
     background-color: #404040;
-    border-radius: 0;
     border: none;
     margin-left: 0 !important;
     color: #999;
     text-shadow: none;
+}
+.aui-button.aui-button-subtle.wiki-operation-undo,
+.aui-button.aui-button-subtle.wiki-operation-redo
+{
+    background: none !important;
 }
 #attachment_thumbnails .attachment-delete,
 .aui-button-subtle.aui-button:hover,
@@ -1072,6 +1087,10 @@ div.build-result-error a
 {
     color: #999;
 }
+th.colHeaderLink.sortable.headerrow-summary
+{
+    background-color: #202020 !important;
+}
 .aui-inline-dialog .aui-inline-dialog-contents,
 .aui-inline-dialog-contents
 {
@@ -1116,7 +1135,6 @@ form.aui .aui-select2-container,
 .ajs-layer
 {
     background-color: #303030;
-    border-radius: 0;
     border-color: #707070;
     color: #999;
 }
@@ -1145,7 +1163,6 @@ aui-inline-dialog .contents,
 .aui-inline-dialog .contents
 {
     background-color: #303030;
-    border-radius: 0;
     border-color: #707070;
     color: #999;
 }
@@ -1172,7 +1189,8 @@ aui-inline-dialog .contents,
 .issue-body-content .module > .mod-header > h3,
 .issue-body-content .module > .mod-header > h4,
 .issue-body-content .module > .mod-header > h5,
-.issue-body-content .module > .mod-header > h6
+.issue-body-content .module > .mod-header > h6,
+.tab-header-section-name
 {
     background-color: #303030;
 }
@@ -1188,12 +1206,15 @@ aui-inline-dialog .contents,
 }
 .editable-field
 {
+    moz-extension: //dcd9db97-1592-1145-a5be-7d09ec18d8d9/edit.html?id=5#
     transition: none;
     -webkit-transition: none;
 }
-.aui-icon-large:before
+.aui-icon-large:before,
+.approve-approver.button,
+.reject-approver.button
 {
-    color: #404040;
+    color: #404040 !important;
 }
 .editable-field.active,
 .issue-body-content .module > .mod-header .ops,
@@ -1201,7 +1222,6 @@ aui-inline-dialog .contents,
 .editable-field:hover
 {
     background-color: #303030;
-    border-radius: 0;
 }
 .aui-sidebar-section-tooltip .tipsy-arrow
 {
@@ -1252,9 +1272,20 @@ form.aui .multi-select[disabled] optgroup,
 .issue-table > thead .active,
 #issuetable > tbody > tr:hover,
 .issue-table > tbody > tr:hover,
-.editable-field .save-options
+.editable-field .save-options,
+th.colHeaderLink.sortable.headerrow-summary:hover
 {
-    background-color: #404040;
+    background-color: #5f5f5f !important;
+}
+.colHeaderLink.sortable.headerrow-summary
+{
+    background-color: #404040 !important;
+}
+.colHeaderLink,
+.colHeaderLink.sortable.headerrow-summary,
+.active.headerrow-assignee
+{
+    color: #d0d0d0 !important;
 }
 .ghx-issue-compact.ui-sortable-helper .ghx-end,
 .criteria-list .aui-button:focus,
@@ -1267,7 +1298,7 @@ form.aui .multi-select[disabled] optgroup,
 {
     box-shadow: none;
 }
-.operations > li > .active,
+/*.operations > li > .active,
 .iic-widget__summary,
 .tabwrap > .tabs.horizontal > li:first-child > a,
 .tabwrap > .tabs.horizontal > li:first-child > strong,
@@ -1297,8 +1328,10 @@ form.aui .multi-select[disabled] optgroup,
 .toolbar-group .toolbar-item:first-of-type .toolbar-trigger
 {
     border-radius: 0 !important;
-}
-.tipsy .tipsy-w .aui-sidebar-section-tooltip .tooltip-shown
+}*/
+.tipsy .tipsy-w .aui-sidebar-section-tooltip .tooltip-shown,
+.aui-message.error,
+.aui-message-error
 {
     background: black !important;
 }
@@ -1413,7 +1446,8 @@ div.attachments-drop-zone__dragover-info
     background: rgba(255, 255, 255, .1);
     border-radius: 0px;
 }
-::-webkit-scrollbar-thumb:hover
+::-webkit-scrollbar-thumb:hovermoz-extension: //dcd9db97-1592-1145-a5be-7d09ec18d8d9/edit.html?id=5#
+
 {
     background: rgba(255, 255, 255, .25);
 }
@@ -1425,7 +1459,9 @@ div.attachments-drop-zone__dragover-info
 {
     background: #999 !important;
 }
-.aui-badge
+.aui-badge,
+.aui-page-header,
+.o-checkbox
 {
     background: #303030;
 }
@@ -1441,10 +1477,6 @@ ul.labels li .lozenge,
 .o-checklist
 {
     background-color: #303030;
-}
-.o-checkbox
-{
-    background: #303030;
 }
 .jppng-estimation-layout-standard
 {
@@ -1801,6 +1833,7 @@ primary[disabled],
 #create-issue-submit,
 #issue-workflow-transition-submit,
 #issue-comment-add-submit,
+#linkjiraissue-add-selected,
 primary[disabled],
 .aui-button.aui-button-primary[disabled],
 .aui-button.aui-button-primary[disabled],
@@ -1891,4 +1924,14 @@ td.totals,
 .dashboard-tabs.tabs.vertical ul li.aui-nav-selected
 {
     background-color: #444 !important;
+}
+.aui-button,
+a.aui-button,
+.aui-button:visited
+{
+    background-color: rgb(66, 68, 71);
+}
+.search-options-container
+{
+    padding-left: 5px !important;
 }
